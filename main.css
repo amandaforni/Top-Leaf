@@ -1,0 +1,124 @@
+html, body { 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #495A56;
+   }
+
+h1{
+    color: #495A56;
+    text-shadow: -4px 2px 3px #F5F5f5;
+    font-size: 3em;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+   
+#instructions{
+    text-align: center;
+    padding-bottom: 1%;
+    border-radius: 30px;
+    background: rgb(245 245 245 / 30%);
+    filter:brightness(125%);
+    backdrop-filter: blur(10px);
+    color: #495A56;
+    margin-left: 25%;
+    max-width: 50%;
+}
+
+.wrap {
+    background-image: url("");
+    min-width: 100vh;
+    max-height: 100vh;
+    margin: auto;
+    padding: 0px;
+    font-family: 'PT Serif', serif;
+}
+
+.wrap::after {
+    content: "";
+    background: url("img/background1.jpeg");
+    background-size: cover;
+    opacity: 0.6;
+    filter:brightness(70%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    overflow:hidden;
+    z-index: -1;
+}
+
+.cards {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 46em;
+    margin: 0 auto;
+   }
+  
+#oppCard {
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    margin-bottom: 0;
+    border: 0.5px solid  #A6BBA0;
+    border-radius: 10px;
+    width:47%;
+    background-color: #F5F5f5;
+    color: #495A56;
+    float:right;
+   }
+   
+#yourCard {
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    margin-bottom: 0;
+    border: 0.5px solid  #A6BBA0;
+    border-radius: 10px;
+    width:47%;
+    float:left;
+    background-color: #F5F5f5;
+    color: #495A56;
+   }
+
+#yourCard img, #oppCard img {
+       height: 80%;
+       width: 80%;
+   }
+
+#matchResult {
+    clear: both;
+    height:1.5em;
+    font-weight: bold;
+}
+   
+#compareButton {
+    height: 40px;
+    border:0.1em solid #A6BBA0;
+    margin: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    color:#495A56;
+    text-align:center;
+}
+
+#compareButton:hover{
+    color:#495A56;
+    background-color:#A6BBA0;
+}
+
+#compareButton:focus{
+    outline: none;
+}

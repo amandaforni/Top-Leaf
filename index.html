@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Top Leaf</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="topLeafGame.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada:wght@700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="instructions">
+            <h1>Top Leaf</h1>
+            <h2>Select the attribute you think will be higher than the opponent, then compare your cards.
+            <br>The first person to hold all 30 cards wins the game.
+            </h2>
+        </div>
+        <br />
+        <form onsubmit="return compare()" action="" id="player1">
+            <div class="cards">
+                <div id="yourCard">
+                    <strong>Your Card:<br /><big><span id="P1Name">&#160;</span></big></strong>
+                    <p><img src="img/alocasia.jpeg" alt="Plant image" id="P1CardImage" /></p>
+                    <table>
+                        <td>
+                        <th>Threatening Aura: </th>
+                        <td><input name="p1" id="threat" value="threat" type="radio" /><label for="threat"
+                                id="P1threat"><span class="hide"> </span>&#160;</label></td>
+                        <th>Ability to Cope Outside: </th>
+                        <td><input name="p1" id="cope" value="cope" type="radio" /><label for="cope" id="P1cope"><span
+                                    class="hide"> </span>&#160;</label></td>
+                        <th>Toxicity: </th>
+                        <td><input name="p1" id="toxic" value="toxic" type="radio" /><label for="toxic"
+                                id="P1toxic"><span class="hide"> </span>&#160;</label></td>
+                        </td>
+                    </table>
+                    <br>
+                    <span id="yourCards">Player 1 has 15 cards.</span>
+                </div>
+
+                <div id="oppCard">
+                    <strong>Opponents Card:<br /><big><span id="P2Name">&#160;</span></big></strong>
+                    <p>
+                        <img src="img/default.jpeg" alt="Opponent's hidden card" id="P2CardImage" />
+                    </p>
+                    <table>
+                        <td>
+                        <th>Level of Threatening Aura: </th>
+                        <td id="P2threat">&#160;</td>
+                        <th>Ability to Cope Outside: </th>
+                        <td id="P2cope">&#160;</td>
+                        <th>Toxicity: </th>
+                        <td id="P2toxic">&#160;</td>
+                        </td>
+                    </table>
+                    <br>
+                    <span id="oppCards">Computer has 15 cards.</span>
+                </div>
+                <p id="matchResult">&#160;</p>
+                <p><input id="compareButton" value="Compare Cards" type="submit" /></p>
+            </div>
+    </div>
+
+    <script>
+        setup();
+    </script>
+    </form>
+</body>
+
+</html>
